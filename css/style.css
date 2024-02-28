@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+
+:root {
+  --purple: rgb(201, 82, 127);
+  --hover-purple: rgb(188, 25, 125);
+  --background-color: #f2d2ab;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px 30px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 2;
+  /* background-color: var(--background-color); */
+  background-color: rgb(244, 222, 222);
+}
+header ul {
+  display: flex;
+  column-gap: 13%;
+}
+
+header a {
+  color: var(--purple);
+}
+header a:hover {
+  color: var(--hover-purple);
+}
+header li {
+  font-family: "Caveat Brush";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+header button {
+  color: var(--purple);
+  /* background-color: var(--background-color); */
+  background-color: transparent;
+  border: none;
+  font-family: "Caveat Brush";
+  font-size: 35px;
+  border-radius: 8px;
+}
+header button:hover {
+  color: var(--hover-purple);
+}
+header select {
+  color: var(--purple);
+  /* background-color: var(--background-color); */
+  background-color: transparent;
+  border: none;
+  font-family: "Caveat Brush";
+  font-size: 35px;
+  border-radius: 8px;
+  text-align: center;
+  width: 150px;
+}
+header select:hover {
+  color: var(--hover-purple);
+}
+
+span i,
+footer i {
+  color: var(--purple);
+  font-size: 50px;
+  cursor: pointer;
+}
+span i:hover,
+footer i:hover {
+  color: var(--hover-purple);
+}
+.check {
+  display: flex;
+  column-gap: 1%;
+}
+.fa-paw {
+  font-size: 35px;
+}
+.too-hover:hover .fa-paw {
+  color: var(--hover-purple);
+}
+.homie-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+  background-color: var(--background-color);
+}
+
+.dalmatinelebi {
+  width: 100vh;
+  height: 100vh;
+  background: url(../photos/dalmatinelebi2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 25px;
+  border-radius: 4px;
+  opacity: 0.8;
+  filter: grayscale(100%);
+}
+.dalmatinelebi:hover {
+  animation: dogs 1.5s 1s linear forwards;
+}
+@keyframes dogs {
+  to {
+    margin-top: 75px;
+    scale: 1.2;
+    opacity: 1;
+  }
+}
+
+footer h6 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(196, 174, 173);
+}
+footer {
+  background-color: rgb(244, 222, 222);
+}
+
+/* adopt page */
+.adopt-main {
+  background-color: var(--background-color);
+  /* background-color: rgb(244, 222, 222); */
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3%;
+  margin-top: 140px;
+}
+.adopt-main section {
+  width: 100vh;
+  height: auto;
+  background-color: #f2d2ab;
+  border: 2px solid var(--hover-purple);
+  border-radius: 8px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.infos1,
+.infos2,
+.infos3,
+.infos4,
+.infos5,
+.infos6,
+.infos7,
+.infos8,
+.infos9,
+.infos10 {
+  width: 100vh;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infos1 span,
+.infos2 span,
+.infos3 span,
+.infos4 span,
+.infos5 span,
+.infos6 span,
+.infos7 span,
+.infos8 span,
+.infos9 span,
+.infos10 span {
+  font-size: 40px;
+  font-family: "Caveat Brush";
+  color: var(--purple);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  margin-bottom: 16px;
+}
+.infos1 li,
+.infos2 li,
+.infos3 li,
+.infos4 li,
+.infos5 li,
+.infos6 li,
+.infos7 li,
+.infos8 li,
+.infos9 li,
+.infos10 li {
+  font-size: 30px;
+  font-family: "Caveat Brush";
+  color: rgb(156, 148, 148);
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.adopt1 {
+  background: url(../photos/adopt1.jpg);
+  width: 100vh;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin: 20px;
+}
+.adopt2 {
+  background: url(../photos/adopt2.PNG);
+  width: 100vh;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.adopt3 {
+  background: url(../photos/adopt3.jpg);
+  width: 100vh;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.adopt4 {
+  background: url(../photos/adopt4.jpg);
+  width: 100vh;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.adopt5 {
+  background: url(../photos/adopt5.jpg);
+  width: 100vh;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.adopt6 {
+  background: url(../photos/adopt6.jpg);
+  width: 100vh;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.adopt7 {
+  background: url(../photos/adopt7.jpg);
+  width: 100vh;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.adopt8 {
+  background: url(../photos/adopt8.jpg);
+  width: 100vh;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.adopt9 {
+  background: url(../photos/adopt9.jpg);
+  width: 100vh;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.adopt10 {
+  background: url(../photos/adopt10.jpg);
+  width: 100vh;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
