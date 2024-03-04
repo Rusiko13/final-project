@@ -1,26 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 
 :root {
   --purple: rgb(201, 82, 127);
   --hover-purple: rgb(188, 25, 125);
   --background-color: #f2d2ab;
+  --light-brown: rgb(196, 174, 173);
+  --darkest-grey: #5b5d6b;
+  --font-brush: "Caveat Brush";
+  --lightest-grey: #d2d4da;
+  --light-grey: #b3b5bd;
+  --dark-grey: #9496a1;
+  /* color: #D2D4DA;
+  color: #B3B5BD;
+  color: #777986; */
 }
 header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 35px 30px;
-  position: fixed;
-  top: 0;
-  background-color: #fff;
-  width: 100%;
-  z-index: 2;
-  /* background-color: var(--background-color); */
-  background-color: rgb(244, 222, 222);
+  /* background-color: rgb(244, 222, 222); */
+  margin: 35px 30px;
 }
 header ul {
   display: flex;
-  column-gap: 13%;
+  justify-content: space-between;
+  /* column-gap: 13%; */
 }
 
 header a {
@@ -36,16 +38,15 @@ header li {
   font-size: 35px;
 }
 
-header button {
+.button {
   color: var(--purple);
-  /* background-color: var(--background-color); */
-  background-color: transparent;
+  background-color: var(--background-color);
   border: none;
   font-family: "Caveat Brush";
   font-size: 35px;
   border-radius: 8px;
 }
-header button:hover {
+.button:hover {
   color: var(--hover-purple);
 }
 header select {
@@ -112,14 +113,21 @@ footer i:hover {
     opacity: 1;
   }
 }
-
-footer h6 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: rgb(196, 174, 173);
-}
 footer {
   background-color: rgb(244, 222, 222);
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 30px 30px 0;
+}
+.footer-logos h6 {
+  font-family: "Caveat", "cursive";
+  font-size: 36px;
+  color: var(--grey-color);
+  margin-bottom: 12px;
+}
+.footer-logos div {
+  display: flex;
+  column-gap: 22px;
 }
 
 /* adopt page */
@@ -294,4 +302,124 @@ footer {
   border-radius: 8px;
   margin-top: 10px;
   margin-left: 10px;
+}
+
+/* firtspage */
+.first-page-main {
+  display: flex;
+}
+.first-page-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first-page-container > div {
+  width: 75%;
+  font-family: "Caveat Brush";
+  color: var(--purple);
+  font-size: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.first-page-container > div > h1,
+h2 {
+  text-shadow: 2px 2px 2px var(--light-brown);
+}
+.first-page-container > div > h2 {
+  padding-left: 20px;
+}
+.first-page-photo {
+  width: 50%;
+  height: 700px;
+  background: url(../photos/firstpage.PNG);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+.left-container > section {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-dv {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-brush);
+  font-size: 22px;
+  color: var(--darkest-grey);
+}
+.form-dv > label {
+  margin-bottom: 5px;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  border: 2px solid #d2d4da;
+  font-family: var(--lightest-grey);
+  color: #d2d4da;
+  font-size: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+.login-dv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--light-grey);
+  color: var(--darkest-grey);
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: var(--font-brush);
+}
+.login-dv a {
+  color: var(--darkest-grey);
+  margin-bottom: 25px;
+  font-family: var(--font-brush);
+  font-size: 18px;
+}
+.sign-up-dv {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up-dv p {
+  color: var(--darkest-grey);
+  font-family: var(--font-brush);
+  font-size: 20px;
+}
+.sign-up-btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-size: 25px;
+  border-radius: 6px;
+  background-color: var(--light-grey);
+  color: var(--darkest-grey);
+  margin-bottom: 10px;
+  font-family: var(--font-brush);
+}
+.btn-dv {
+  display: flex;
+  text-align: center;
+  column-gap: 40px;
+  margin-top: 30px;
+}
+.btn-dv button {
+  width: 200px;
+  height: 50px;
 }

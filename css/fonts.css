@@ -10,3 +10,16 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("//fonts/CaveatBrush-Regular.eot");
+  src: url("//fonts/CaveatBrush-Regular.eot") format("embedded-opentype"),
+    url("//fonts/CaveatBrush-Regular.woff2") format("woff2"),
+    url("//fonts/CaveatBrush-Regular.woff") format("woff"),
+    url("//fonts/CaveatBrush-Regular.ttf") format("truetype"),
+    url("//fonts/CaveatBrush-Regular.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
