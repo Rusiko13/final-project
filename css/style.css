@@ -74,7 +74,7 @@ span i:hover,
 footer i:hover {
   color: var(--hover-purple);
 }
-.check {
+.li-icon {
   display: flex;
   column-gap: 1%;
 }
@@ -113,22 +113,6 @@ footer i:hover {
     opacity: 1;
   }
 }
-footer {
-  background-color: rgb(244, 222, 222);
-  display: flex;
-  justify-content: flex-end;
-  padding: 30px 30px 30px 0;
-}
-.footer-logos h6 {
-  font-family: "Caveat", "cursive";
-  font-size: 36px;
-  color: var(--grey-color);
-  margin-bottom: 12px;
-}
-.footer-logos div {
-  display: flex;
-  column-gap: 22px;
-}
 
 /* adopt page */
 .adopt-main {
@@ -142,7 +126,7 @@ footer {
 }
 .adopt-main section {
   width: 100vh;
-  height: auto;
+  /* height: auto; */
   background-color: #f2d2ab;
   border: 2px solid var(--hover-purple);
   border-radius: 8px;
@@ -305,6 +289,7 @@ footer {
 }
 
 /* firtspage */
+
 .first-page-main {
   display: flex;
 }
@@ -312,8 +297,8 @@ footer {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin-top: 90px;
 }
 .first-page-container > div {
   width: 75%;
@@ -325,26 +310,20 @@ footer {
   align-items: center;
   row-gap: 20px;
 }
-.first-page-container > div > h1,
+.first-page-container h1,
 h2 {
   text-shadow: 2px 2px 2px var(--light-brown);
 }
-.first-page-container > div > h2 {
+.first-page-container h2 {
   padding-left: 20px;
 }
 .first-page-photo {
   width: 50%;
-  height: 700px;
+  height: 500px;
   background: url(../photos/firstpage.PNG);
-  background-position: center;
+  background-position: top;
   background-size: 70%;
   background-repeat: no-repeat;
-}
-.left-container > section {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .form-dv {
   display: flex;
@@ -367,13 +346,15 @@ input {
   border-radius: 6px;
   margin-bottom: 15px;
   padding-left: 5px;
+  outline: none;
 }
 .login-dv {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.login-btn {
+.login-btn,
+.sign-up-btn {
   width: 100%;
   height: 40px;
   border: none;
@@ -422,4 +403,111 @@ input {
 .btn-dv button {
   width: 200px;
   height: 50px;
+}
+.sign-up-with {
+  text-align: center;
+  font-family: var(--font-brush);
+  font-size: 18px;
+  color: var(--darkest-grey);
+  margin-bottom: 8px;
+}
+.sign-up-logos {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+.fa-square-facebook {
+  color: #316ff6;
+  background-color: transparent;
+  font-size: 40px;
+}
+#loginFormContainer,
+#signupFormContainer {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: auto;
+  height: 335px;
+}
+.login-face-logo {
+  font-family: var(--font-brush);
+  font-size: 18px;
+  color: var(--darkest-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+}
+
+footer {
+  background-color: rgb(244, 222, 222);
+  padding: 30px;
+}
+.footer-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.footer-footer h6,
+.footer-footer h4 {
+  font-family: var(--font-brush);
+  font-size: 36px;
+  color: var(--purple);
+  margin-bottom: 12px;
+}
+.footer-footer a {
+  color: var(--purple);
+  font-family: var(--font-brush);
+  font-size: 26px;
+}
+.footer-subscribe p {
+  color: var(--purple);
+  font-family: var(--font-brush);
+  font-size: 36px;
+}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  color: var(--dark-grey);
+  font-family: var(--font-brush);
+  font-size: 20px;
+}
+.footer-form input {
+  width: 320px;
+  height: 50px;
+  background-color: transparent;
+}
+.subscribe-btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.footer-submit {
+  display: flex;
+  margin-top: 15px;
+  column-gap: 10px;
+}
+.footer-logos {
+  display: flex;
+  justify-content: space-between;
+}
+.last-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  color: var(--light-grey);
+  font-family: var(--font-brush);
+  font-size: 18px;
+}
+.last-line ul {
+  display: flex;
+  column-gap: 10px;
+}
+.last-line a {
+  color: var(--light-grey);
+  font-family: var(--font-brush);
+  font-size: 22px;
 }

@@ -43,6 +43,5 @@ loginButton.addEventListener("click", function () {
     signupFormContainer.style.display = "none";
   } else {
     loginFormContainer.style.display = "none";
-
   }
 });
