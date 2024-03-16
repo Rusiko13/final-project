@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/56f0f4a877.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <div class="icon-div ">
+            <ul class="li-icon too-hover">
+              <li><a href="homie.html" class="too-hover"> H</a></li>
+              <li>
+                <a href="homie.html"
+                  ><i class="fa-solid fa-paw too-hover"></i
+                ></a>
+              </li>
+              <li><a href="homie.html" class="too-hover"> mie</a></li>
+            </ul>
+          </div>
+          <li><a href="adopt.html">Adopt & find a family</a></li>
+          <li><a href="lostandfound.html">Lost & Found</a></li>
+          <li><a href="vet.html">Vet</a></li>
+          <li><a href="food.html">Food</a></li>
+          <li><a href="Grooming.html">Grooming</a></li>
+        </ul>
+      </nav>
+    </header>
+  <main class="groom-main">
+      <div class="groom-calender">
+        <div>
+          <button
+            id="groom-btn1"
+            class="groom-sb-appointment button"
+          >Book Appointment
+          </button>
+        </div>
+        <section id="calendar">
+          <div class="month">
+            <ul>
+              <li class="prev">&#10094;</li>
+              <li class="next">&#10095;</li>
+              <li>
+                MArch<br />
+                <span style="font-size: 18px">2024</span>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+          </ul>
+
+          <ul class="days">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li><span class="active">10</span></li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- <p>Book an Appointment with Or Groom Specialist Today!</p> -->
+
+      <div class="groom-div1">
+        <div>
+          <p class="groom-p">Get off 20%</p>
+        </div>
+        <div>
+          <div>
+            <div class="groom-child-div">
+              <button class="groom-sb" type="submit">Book Now</button>
+              <p class="groom-p">A Spa for your Homie</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Appointment -->
+      <h1>Appointment Booking</h1>
+  <div id="calendar"></div>
+  <div id="appointmentForm">
+    <h2>Book an Appointment</h2>
+    <input type="date" id="date">
+    <input type="time" id="time">
+    <button onclick="bookAppointment()">Book Now</button>
+  </div>
+    </main>
+    <footer>
+      <div class="footer-footer">
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="homie.html" class="too-hover">Homie</a></li>
+            <li><a href="adopt.html">Adopt & Find a Family</a></li>
+            <li><a href="lostandfound.html">Lost & Found</a></li>
+            <li><a href="vet.html">Vet</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="Grooming.html">Grooming</a></li>
+          </ul>
+        </div>
+        <div class="footer-subscribe">
+          <p>Subscribe to find your Homie</p>
+          <div class="footer-submit">
+            <div class="footer-form">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="email" />
+            </div>
+            <button class="subscribe-btn" type="submit">
+              <i class="fa-solid fa-paw"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <h6 class="footer-h6">Follow Us</h6>
+          <div class="footer-logos">
+            <a href=""> <i class="fa-brands fa-facebook"></i> </a>
+
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <section class="last-line">
+        <div class="last-line-div">
+          <ul>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Cookies Settings</a></li>
+          </ul>
+        </div>
+        <div><p>Copyright 2024, all rights reserved.</p></div>
+        <div>
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

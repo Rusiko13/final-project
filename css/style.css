@@ -49,21 +49,6 @@ header li {
 .button:hover {
   color: var(--hover-purple);
 }
-header select {
-  color: var(--purple);
-  /* background-color: var(--background-color); */
-  background-color: transparent;
-  border: none;
-  font-family: "Caveat Brush";
-  font-size: 35px;
-  border-radius: 8px;
-  text-align: center;
-  width: 150px;
-}
-header select:hover {
-  color: var(--hover-purple);
-}
-
 span i,
 footer i {
   color: var(--purple);
@@ -81,7 +66,7 @@ footer i:hover {
 .fa-paw {
   font-size: 35px;
 }
-.too-hover:hover .fa-paw {
+.icon-div:hover .too-hover {
   color: var(--hover-purple);
 }
 .homie-main {
@@ -115,6 +100,7 @@ footer i:hover {
 }
 
 /* adopt page */
+
 .adopt-main {
   background-color: var(--background-color);
   /* background-color: rgb(244, 222, 222); */
@@ -123,6 +109,7 @@ footer i:hover {
   flex-wrap: wrap;
   column-gap: 3%;
   margin-top: 140px;
+  margin-bottom: 30px;
 }
 .adopt-main section {
   width: 100vh;
@@ -288,10 +275,11 @@ footer i:hover {
   margin-left: 10px;
 }
 
-/* firtspage */
+/* homiepage */
 
 .first-page-main {
   display: flex;
+  position: relative;
 }
 .first-page-container {
   width: 50%;
@@ -324,6 +312,179 @@ h2 {
   background-position: top;
   background-size: 70%;
   background-repeat: no-repeat;
+}
+.hidden-div {
+  width: 100%;
+  font-family: var(--font-brush);
+  color: var(--purple);
+  font-size: 30px;
+}
+.welcome-h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.fa-user {
+  font-size: 40px;
+  color: var(--purple);
+}
+.user-div {
+  z-index: 2;
+  height: 66px;
+  width: 66px;
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+/* .user-div::after{
+  content: "v";
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  color: var(--dark-grey);
+  background: #ddd;
+  border-radius: 50%;
+} */
+.user-ul {
+  display: none;
+}
+.user-ul.user-ul-active {
+  display: block;
+  color: var(--darkest-grey);
+  font-size: 20px;
+  width: 150px;
+  height: 100px;
+  background-color: var(--background-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  border-radius: 30%;
+  position: absolute;
+  top: 20px;
+  right: 55px;
+}
+.welcome-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 400px;
+  border-radius: 30%;
+  background-color: var(--background-color);
+  text-align: center;
+  font-size: 28px;
+  padding: 50px;
+  text-align: center;
+}
+.welcome-photo-p {
+  display: flex;
+  align-items: center;
+  margin-inline: 25px;
+  padding-bottom: 50px;
+}
+.relative-div1,
+.relative-div2,
+.relative-div3,
+.relative-div4,
+.relative-div5,
+.relative-div6 {
+  position: relative;
+}
+
+.click-paw {
+  position: absolute;
+  bottom: 50px;
+  right: 90px;
+}
+.click-paw2 {
+  position: absolute;
+  bottom: 50px;
+  left: 390px;
+}
+.paw-div {
+  width: 80px;
+  height: 80px;
+  border-radius: 30%;
+  /* background-color: var(--light-grey); */
+  color: var(--dark-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .text-active{
+  display: none;
+}
+.paw-div:hover .text-active {
+display: block;
+} */
+.first-page-photo1 {
+  width: 50%;
+  height: 500px;
+  background: url(../photos/firstpage.PNG);
+  background-position: top;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+.first-page-photo2 {
+  width: 50%;
+  height: 500px;
+  background: url(../photos/findafamily.PNG);
+  background-position: top;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+.first-page-photo3 {
+  width: 50%;
+  height: 500px;
+  background: url(../photos/lost.jpg);
+  background-position: top;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+.first-page-photo4 {
+  width: 50%;
+  height: 500px;
+  background: url(../photos/petvet.jpg);
+  background-position: top;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+.first-page-photo5 {
+  width: 50%;
+  height: 500px;
+  background: url(../photos/grooming.jpg);
+  background-position: top;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+.first-page-photo6 {
+  width: 50%;
+  height: 500px;
+  background: url(../photos/store.PNG);
+  background-position: top;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+.adopt {
+  display: flex;
+  flex-direction: column;
+}
+.browse {
+  margin-top: 15px;
 }
 .form-dv {
   display: flex;
@@ -438,6 +599,17 @@ input {
   align-items: center;
   column-gap: 5px;
 }
+.background {
+  opacity: 0.3;
+}
+.log-form,
+.sign-form {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
 
 footer {
   background-color: rgb(244, 222, 222);
@@ -510,4 +682,146 @@ footer {
   color: var(--light-grey);
   font-family: var(--font-brush);
   font-size: 22px;
+}
+
+/* lost and found */
+
+/* Grooming */
+
+.groom-main {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center;
+  column-gap: 30px; */
+  /* background-color: var(--background-color); */
+}
+
+.groom-div1 {
+  width: 500px;
+  height: 500px;
+  background: url(../photos/grooming2.jpg);
+  background-size: contain;
+  margin: 20px 0 20px;
+  background-repeat: no-repeat;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  row-gap: 14px;
+  padding-bottom: 20px;
+  padding-right: 5px;
+  border-radius: 12px;
+}
+.groom-p {
+  font-family: var(--font-brush);
+  font-size: 30px;
+  color: var(--purple);
+  text-shadow: 1px 1px var(--hover-purple);
+  background-color: var(--background-color);
+  border-radius: 20px;
+  display: inline-block;
+  padding: 10px;
+}
+.groom-sb {
+  outline: none;
+  font-family: var(--font-brush);
+  font-size: 22px;
+  background-color: var(--background-color);
+  border: 2px solid var(--background-color);
+  border-radius: 20px;
+  color: var(--purple);
+  padding: 10px;
+  text-shadow: 1px 1px var(--hover-purple);
+}
+.groom-sb:hover {
+  color: var(--hover-purple);
+}
+.groom-child-div {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+/* calender */
+
+.groom-calender {
+  display: flex;
+  flex-direction: column;
+}
+
+.month {
+  padding: 40px 25px;
+  width: 100%;
+  background: var(--purple);
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: var(--darkest-grey);
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: var(--purple);
+  color: white !important;
+}
+
+.sign-form {
+  display: none;
+}
+.body-class {
+  background-color: red;
+}
+#time {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
