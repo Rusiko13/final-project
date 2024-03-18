@@ -109,3 +109,6 @@ userIcon.addEventListener("click", function(){
 userUl.classList.toggle("user-ul-active");
 });
 
+    // Proceed with form submission if all checks pass
+    return true;
+}
