@@ -16,7 +16,7 @@
     <header>
       <nav>
         <ul>
-          <div class="icon-div ">
+          <div class="icon-div">
             <ul class="li-icon too-hover">
               <li><a href="homie.html" class="too-hover"> H</a></li>
               <li>
@@ -36,9 +36,79 @@
       </nav>
     </header>
     <main class="adopt-main">
-      <!-- <h5>open your heart and home to a deserving pet today</h5> -->
-      <section>
-        <div class="adopt1 adopt"></div>
+      <div class="scroll-down-main-div">
+        <h5>if you'd like to find your Homie today</h5>
+        <div>Scroll Down <span> <i class="fa-solid fa-paw scroll-paw"></i>
+        </span></div>
+      </div>
+      <div class="form-house-iCon">
+        <div class="house-iCon-main-div">
+          <h5>
+            to find a home for your pet please fill this form up
+          </h5><span> <i class="fa-solid fa-paw scroll-paw"></i>
+          </span>
+        </div>
+    
+        <form id="uploadForm" class="adopt-form">
+          <div class="form-part1">
+            <div>
+              <label for="petname">Pet Name:</label>
+              <input
+                type="text"
+                id="petName"
+                name="petname"
+                placeholder="type your pet name"
+                required
+              />
+              <label for="petSex">Pet Sex:</label>
+              <select name="petsex" id="petSex">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="petAge">Pet Age:</label>
+              <input
+                type="number"
+                id="petAge"
+                name="petage"
+                min="1"
+                max="20"
+                placeholder="type your pet age"
+              />
+
+              <label for="petBreed">Breed:</label>
+              <input
+                type="text"
+                id="petBreed"
+                name="petBreed"
+                placeholder="type your pet breed"
+              />
+            </div>
+          </div>
+          <label for="petPhoto" class="label-pointer">
+            <i class="fa-solid fa-camera"></i>
+
+            Upload Photo of your pet:
+
+            <input
+              type="file"
+              id="petPhoto"
+              name="petPhoto"
+              accept="image/*"
+              required
+            />
+          </label>
+
+          <button type="submit" class="adopt-btn button">Upload</button>
+        </form>
+      </div>
+      <div>Ready to find a new Family Member?</div>
+      <div>to find your favorite pet just scroll down</div>
+      <div class="pet-content "> 
+      <section class="adopt-section">
+        <div class="adopt-pic1 adopt"></div>
         <div class="infos1">
           <ul>
             <li><span> Name:</span> Hannah</li>
@@ -46,21 +116,55 @@
             <li><span> Age:</span> 2 years</li>
             <li><span> Breed:</span> mixed</li>
           </ul>
+        </div> 
+        <div class="favorite-div">
+          <li class="favorite-li">
+            <span> Loved</span>
+            <div class="icons-active">
+              <i class="fa-regular fa-heart outer-icon">
+                <i class="fa-solid fa-paw inner-icon"></i
+              ></i>
+            </div>
+          </li>
+        </div>
+        <div class="chat-div">
+          <h6>Chat</h6>
+          <div class="chat-icon-div">
+            <i class="fa-regular fa-message"></i>
+            <div class="notification-div">3</div>
+          </div>
         </div>
       </section>
-      <section>
-        <div class="adopt2 adopt"></div>
+      <section class="adopt-section2">
+        <div class="adopt-pic2 adopt"></div>
         <div class="infos2">
           <ul>
-            <li><span> Name:</span> Hannah</li>
+            <li><span> Name:</span> Sofie</li>
             <li><span> Sex: </span>female</li>
-            <li><span> Age:</span> 2 years</li>
+            <li><span> Age:</span> 1 year</li>
             <li><span> Breed:</span> mixed</li>
           </ul>
         </div>
+        <div class="favorite-div">
+          <li class="favorite-li">
+            <span> Loved</span>
+            <div class="icons-active">
+              <i class="fa-regular fa-heart outer-icon">
+                <i class="fa-solid fa-paw inner-icon"></i
+              ></i>
+            </div>
+          </li>
+        </div>
+        <div class="chat-div">
+          <h6>Chat</h6>
+          <div class="chat-icon-div">
+            <i class="fa-regular fa-message"></i>
+            <div class="notification-div">1</div>
+          </div>
+        </div>
       </section>
-      <section>
-        <div class="adopt3 adopt"></div>
+      <section class="adopt-section3">
+        <div class="adopt-pic3 adopt"></div>
         <div class="infos3">
           <ul>
             <li><span> Name:</span> Hannah</li>
@@ -69,9 +173,26 @@
             <li><span> Breed:</span> mixed</li>
           </ul>
         </div>
+        <div class="favorite-div">
+          <li class="favorite-li">
+            <span> Loved</span>
+            <div class="icons-active">
+              <i class="fa-regular fa-heart outer-icon">
+                <i class="fa-solid fa-paw inner-icon"></i
+              ></i>
+            </div>
+          </li>
+        </div>
+        <div class="chat-div">
+          <h6>Chat</h6>
+          <div class="chat-icon-div">
+            <i class="fa-regular fa-message"></i>
+            <div class="notification-div">1</div>
+          </div>
+        </div>
       </section>
-      <section>
-        <div class="adopt4 adopt"></div>
+      <section class="adopt-section4">
+        <div class="adopt-pic4 adopt"></div>
         <div class="infos4">
           <ul>
             <li><span> Name:</span> Hannah</li>
@@ -80,9 +201,26 @@
             <li><span> Breed:</span> mixed</li>
           </ul>
         </div>
+        <div class="favorite-div">
+          <li class="favorite-li">
+            <span> Loved</span>
+            <div class="icons-active">
+              <i class="fa-regular fa-heart outer-icon">
+                <i class="fa-solid fa-paw inner-icon"></i
+              ></i>
+            </div>
+          </li>
+        </div>
+        <div class="chat-div">
+          <h6>Chat</h6>
+          <div class="chat-icon-div">
+            <i class="fa-regular fa-message"></i>
+            <div class="notification-div">1</div>
+          </div>
+        </div>
       </section>
-      <section>
-        <div class="adopt5 adopt"></div>
+      <section class="adopt-section5">
+        <div class="adopt-pic5 adopt"></div>
         <div class="infos5">
           <ul>
             <li><span> Name:</span> Hannah</li>
@@ -91,9 +229,26 @@
             <li><span> Breed:</span> mixed</li>
           </ul>
         </div>
+        <div class="favorite-div">
+          <li class="favorite-li">
+            <span> Loved</span>
+            <div class="icons-active">
+              <i class="fa-regular fa-heart outer-icon">
+                <i class="fa-solid fa-paw inner-icon"></i
+              ></i>
+            </div>
+          </li>
+        </div>
+        <div class="chat-div">
+          <h6>Chat</h6>
+          <div class="chat-icon-div">
+            <i class="fa-regular fa-message"></i>
+            <div class="notification-div">1</div>
+          </div>
+        </div>
       </section>
-      <section>
-        <div class="adopt6 adopt"></div>
+      <section class="adopt-section6">
+        <div class="adopt-pic6 adopt"></div>
         <div class="infos6">
           <ul>
             <li><span> Name:</span> Hannah</li>
@@ -102,9 +257,26 @@
             <li><span> Breed:</span> mixed</li>
           </ul>
         </div>
+        <div class="favorite-div">
+          <li class="favorite-li">
+            <span> Loved</span>
+            <div class="icons-active">
+              <i class="fa-regular fa-heart outer-icon">
+                <i class="fa-solid fa-paw inner-icon"></i
+              ></i>
+            </div>
+          </li>
+        </div>
+        <div class="chat-div">
+          <h6>Chat</h6>
+          <div class="chat-icon-div">
+            <i class="fa-regular fa-message"></i>
+            <div class="notification-div">1</div>
+          </div>
+        </div>
       </section>
-      <section>
-        <div class="adopt7 adopt"></div>
+      <section class="adopt-section7">
+        <div class="adopt-pic7 adopt"></div>
         <div class="infos7">
           <ul>
             <li><span> Name:</span> Hannah</li>
@@ -113,9 +285,26 @@
             <li><span> Breed:</span> mixed</li>
           </ul>
         </div>
+        <div class="favorite-div">
+          <li class="favorite-li">
+            <span> Loved</span>
+            <div class="icons-active">
+              <i class="fa-regular fa-heart outer-icon">
+                <i class="fa-solid fa-paw inner-icon"></i
+              ></i>
+            </div>
+          </li>
+        </div>
+        <div class="chat-div">
+          <h6>Chat</h6>
+          <div class="chat-icon-div">
+            <i class="fa-regular fa-message"></i>
+            <div class="notification-div">1</div>
+          </div>
+        </div>
       </section>
-      <section>
-        <div class="adopt8 adopt"></div>
+      <section class="adopt-section8">
+        <div class="adopt-pic8 adopt"></div>
         <div class="infos8">
           <ul>
             <li><span> Name:</span> Hannah</li>
@@ -124,9 +313,26 @@
             <li><span> Breed:</span> mixed</li>
           </ul>
         </div>
+        <div class="favorite-div">
+          <li class="favorite-li">
+            <span> Loved</span>
+            <div class="icons-active">
+              <i class="fa-regular fa-heart outer-icon">
+                <i class="fa-solid fa-paw inner-icon"></i
+              ></i>
+            </div>
+          </li>
+        </div>
+        <div class="chat-div">
+          <h6>Chat</h6>
+          <div class="chat-icon-div">
+            <i class="fa-regular fa-message"></i>
+            <div class="notification-div">1</div>
+          </div>
+        </div>
       </section>
-      <section>
-        <div class="adopt9 adopt"></div>
+      <section class="adopt-section9">
+        <div class="adopt-pic9 adopt"></div>
         <div class="infos9">
           <ul>
             <li><span> Name:</span> Hannah</li>
@@ -135,9 +341,26 @@
             <li><span> Breed:</span> mixed</li>
           </ul>
         </div>
+        <div class="favorite-div">
+          <li class="favorite-li">
+            <span> Loved</span>
+            <div class="icons-active">
+              <i class="fa-regular fa-heart outer-icon">
+                <i class="fa-solid fa-paw inner-icon"></i
+              ></i>
+            </div>
+          </li>
+        </div>
+        <div class="chat-div">
+          <h6>Chat</h6>
+          <div class="chat-icon-div">
+            <i class="fa-regular fa-message"></i>
+            <div class="notification-div">1</div>
+          </div>
+        </div>
       </section>
-      <section>
-        <div class="adopt10 adopt"></div>
+      <section class="adopt-section10">
+        <div class="adopt-pic10 adopt"></div>
         <div class="infos10">
           <ul>
             <li><span> Name:</span> Hannah</li>
@@ -146,7 +369,25 @@
             <li><span> Breed:</span> mixed</li>
           </ul>
         </div>
+        <div class="favorite-div">
+          <li class="favorite-li">
+            <span> Loved</span>
+            <div class="icons-active">
+              <i class="fa-regular fa-heart outer-icon">
+                <i class="fa-solid fa-paw inner-icon"></i
+              ></i>
+            </div>
+          </li>
+        </div>
+        <div class="chat-div">
+          <h6>Chat</h6>
+          <div class="chat-icon-div">
+            <i class="fa-regular fa-message"></i>
+            <div class="notification-div">1</div>
+          </div>
+        </div>
       </section>
+    </div>
     </main>
     <!-- adopt-footer -->
     <footer>

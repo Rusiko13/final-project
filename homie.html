@@ -32,7 +32,7 @@
             <li><a href="lostandfound.html">Lost & Found</a></li>
             <li><a href="vet.html">Vet</a></li>
             <li><a href="Grooming.html">Grooming</a></li>
-            <li><a href="store.html">Store</a></li>
+            <!-- <li><a href="store.html">Store</a></li> -->
           </ul>
         </nav>
       </header>
@@ -54,12 +54,22 @@
         <div class="hidden-div"> 
           <div class="welcome-h2">
           <h2>Welcome to our pet paradise!</h2>
+          <!-- user div -->
           <div class="user-div">
           <i class="fa-regular fa-user"></i>
           <ul class="user-ul">
-            <li>Personal Info</li>
-            <li>Favorites</li>
-            <li>Chat</li>
+            <li class="back-color">Personal Info
+            </li>
+            <li class="back-color">Favorites
+              <div class="icons-active1">
+                <i class="fa-regular fa-heart outer-icon1">
+                  <i class="fa-solid fa-paw inner-icon1"></i
+                ></i>
+              </div>
+            </li>
+            <li class="back-color">Chat
+                <div class="notification-div1">5</div>
+            </li>
           </ul>
         </div>
        
@@ -340,16 +350,20 @@
             placeholder="Email"
             required
           />
+          <p id="error-email"></p>
         </div>
         <div class="form-dv">
-          <label for="password">Password:</label>
+          <label for="passw">Password:</label>
+          <div>
           <input
             type="password"
             id="password"
-            name="password"
+            name="passw"
             placeholder="Password"
             required
           />
+          <i class="fa-regular fa-eye" id="password-eye"></i>
+        </div>
         </div>
         <div class="login-dv">
           <button class="login-btn" type="submit">Log in</button>
@@ -368,24 +382,30 @@
     <section id="signupFormContainer" class="sign-form">
       <form action="" id="signupForm">
         <div class="form-dv">
-          <label for="email">Email:</label>
+          <label for="emailS">Email:</label>
           <input
             type="email"
-            id="email"
+            id="emailS"
             name="email"
             placeholder="Email"
             required
           />
+          <p id="textError"></p>
         </div>
         <div class="form-dv">
           <label for="password">Password:</label>
-          <input
+          <div>
+            <input
             type="password"
-            id="password"
+            id="password1"
             name="password"
             placeholder="Password"
             required
           />
+            <i class="fa-regular fa-eye" id="passw-eye"></i>
+
+          </div>
+        
         </div>
         <div>
           <button class="sign-up-btn" type="submit">Sign Up</button>
