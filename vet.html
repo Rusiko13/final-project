@@ -16,23 +16,25 @@
     <div id="pageBackground">
       <header>
         <nav>
-            <ul>
-              <div class="icon-div">
-                <ul class="li-icon">
-                  <li><a href="homie.html" class="too-hover"> H</a></li>
-                  <li>
-                    <a href="homie.html"><i class="fa-solid fa-paw"></i></a>
-                  </li>
-                  <li><a href="homie.html" class="too-hover"> mie</a></li>
-                </ul>
-              </div>
-              <li><a href="adopt.html">Adopt & find a family</a></li>
-              <li><a href="lostandfound.html">Lost & Found</a></li>
-              <li><a href="vet.html">Vet</a></li>
-              <li><a href="food.html">Food</a></li>
-              <li><a href="Grooming.html">Grooming</a></li>
-            </ul>
-          </nav>
+          <ul>
+            <div class="icon-div ">
+              <ul class="li-icon too-hover">
+                <li><a href="homie.html" class="too-hover"> H</a></li>
+                <li>
+                  <a href="homie.html"
+                    ><i class="fa-solid fa-paw too-hover"></i
+                  ></a>
+                </li>
+                <li><a href="homie.html" class="too-hover"> mie</a></li>
+              </ul>
+            </div>
+            <li><a href="adopt.html">Adopt & find a family</a></li>
+            <!-- <li><a href="lostandfound.html">Lost & Found</a></li> -->
+            <li><a href="vet.html">Vet</a></li>
+            <li><a href="Grooming.html">Grooming</a></li>
+            <!-- <li><a href="store.html">Store</a></li> -->
+          </ul>
+        </nav>
       </header>
       <main>
         <section class="vet-section1">
@@ -44,12 +46,19 @@
             Our team of experienced veterinarians and compassionate 
             staff are here to provide top-notch medical services tailored 
             to your pet's specific needs.</p>
-        <div class="book-call"><button class="button"> Book Appointment</button>
-          <p><a href="#" > make a call</a></p>
-        </div></div>
+            <div class="book-call">
+              <div>
+              <button class="button vet-btn" id="scroll-btn"> Book Appointment</button></div>
+              <div>
+              <a href="tel:+995571111132" class="button vet-btn"> make a call</a></div>
+            </div>
+        </div>
+       
         </section>
+       
         <section class="vet-section2">
           <h2>Our Services</h2>
+         
           <div class="vet-section2-part1">
           <div class="services"><p>Routine Check-ups</p></div>
           <div class="services"><p>Vaccinations and presentive care</p></div>
@@ -60,57 +69,56 @@
           
         </div>
         </section>
+        <section class="reservation-section" >
+          <div class="groom-title vet-title">
+            <h1>Choose Our Service And Book an Appointment</h1>
+            <h3>When do you want to come?</h3>
+        <div id="calendar"></div>
+        <div id="appointmentForm">
+          <div class="groom-input">
+          <label for="date">Select a Day</label>
+          <input type="date" id="date"></div>
+          <div class="groom-input">
+          <label for="time">Select an hour</label>
+          <input type="time" id="time"></div>
+          <div class="groom-btn-div">
+          <button class="button groom-btn" id="vetBtn">Book Now</button></div>
+        </div>
+              </div>
+        </section>
        
       </main>
       <footer>
-        <section class="vet-section3">
-          <div  class="vet-section2-part2" >
-            <div class="div-contactus">
-           <h4>Contact Us</h4>
-          <ul>
-            <li><a href="#"><span><i class="fa-solid fa-phone"></i></span>+123-456-740</a></li>
-            <li><a href="#"><span><i class="fa-regular fa-envelope"></i></span>petcareinfo@outlook.com</a></li>
-            <li><a href="#"><span><i class="fa-solid fa-location-dot"></i></span>Lake Union Veterinary Clinic
-              1222 Republican St, Seattle, WA 98109, US</a></li>
-            <li><a href="#"></a></li>
-          </ul></div>
-          <div class="vet-map">
-            <h5>Our location</h5>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44058999.89520287!2d163.83994510000005!3d47.623255400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901530c15e5115%3A0x316cd66b56f1bec7!2sLake%20Union%20Veterinary%20Clinic!5e0!3m2!1ska!2sge!4v1710771030857!5m2!1ska!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          </div>
-       </section>
-
         <div class="footer-footer">
           <div>
             <h4>Navigation</h4>
             <ul>
-              <li><a href="index.html" class="too-hover">Homie</a></li>
+              <li><a href="homie.html" class="too-hover">Homie</a></li>
               <li><a href="adopt.html">Adopt & Find a Family</a></li>
-              <li><a href="lostandfound.html">Lost & Found</a></li>
-              <li><a href="#">Vet</a></li>
-              <li><a href="#">Food</a></li>
-              <li><a href="#">Grooming</a></li>
+              <!-- <li><a href="lostandfound.html">Lost & Found</a></li> -->
+              <li><a href="vet.html">Vet</a></li>
+              <li><a href="Grooming.html">Grooming</a></li>
             </ul>
           </div>
           <div class="footer-subscribe">
             <p>Subscribe to find your Homie</p>
             <div class="footer-submit">
               <div class="footer-form">
+                <form action="" id="subscribeForm">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="email" />
+                <input type="email" name="email" id="email" placeholder="email" class="subscribe-input" />
               </div>
-              <button class="subscribe-btn" type="submit">
+              <button id="subscribeBtn" class="subscribe-btn" type="submit">
                 <i class="fa-solid fa-paw"></i>
-              </button>
+              </button></form>
             </div>
           </div>
           <div>
             <h6 class="footer-h6">Follow Us</h6>
             <div class="footer-logos">
-              <a href=""> <i class="fa-brands fa-facebook"></i> </a>
+              <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i> </a>
   
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
         </div>
@@ -131,7 +139,7 @@
           </div>
         </section>
       </footer>
-      <script src="index.js"></script>
+      <script src="vet.js"></script>
     </body>
   </html>
   
