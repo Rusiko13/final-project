@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 let happinessH1 = document.querySelectorAll(".happiness");
 document
   .getElementById("signupForm")
@@ -8,6 +8,8 @@ document
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
 
+    console.log("email " + email);
+    console.log("password" + password);
     document.getElementById("email").value = "";
     document.getElementById("password").value = "";
     alert`you signed up successfully, Thank you!
@@ -23,11 +25,11 @@ signupButton.addEventListener("click", function () {
     signupFormContainer.style.display = "block";
     pageBackground.classList.add("background");
     loginFormContainer.style.display = "none";
-    // document.querySelector("body").style.overflow = "hidden";
+    document.querySelector("body").style.overflow = "hidden";
   } else {
     signupFormContainer.style.display = "none";
     pageBackground.classList.remove("background");
-    // document.querySelector("body").style.overflow = "auto";
+    document.querySelector("body").style.overflow = "auto   ";
   }
 });
 
@@ -68,10 +70,6 @@ emailSign.addEventListener("keyup", validationSign);
 
 //loginform
 
-// let appearedDivs = document.querySelectorAll("hidden-div");
-
-
-
 document
   .getElementById("loginForm")
   .addEventListener("submit", function (event) {
@@ -87,18 +85,10 @@ document
     pageBackground.classList.remove("background");
     signupButton.remove();
     loginButton.remove();
-    // appearedDivs.forEach(function (item)
-    // {
-    //   item.classList.add("appeared-div");
-    //   }
-    // )
 
     happinessH1.forEach(function (el) {
       el.remove();
     });
-
-
-
   });
 
 let loginButton = document.getElementById("loginButton");
@@ -150,9 +140,6 @@ function validation() {
   }
 }
 emailLogin.addEventListener("keyup", validation);
-
-
-
 //user icon home page, inside elements
 
 let userIcon = document.querySelector(".user-div");
@@ -163,79 +150,26 @@ userIcon.addEventListener("click", function () {
 });
 
 
-//read more
-let articles = document.querySelectorAll(".article");
-articles.forEach(function(article) {
-    let readMoreBtn = article.querySelector(".read-more");
-    let hiddenSpan = article.querySelector(".hidden-text");
-    let readLessBtn = article.querySelector("#readless");
 
-    readMoreBtn.addEventListener("click", function(){
-        this.classList.add("remove-read-more-btn");
-        hiddenSpan.classList.add("block-text");
-        readLessBtn.classList.add("read-less-block");
-    });
+// // let btn = document.getElementById("groom-btn1");
+// // btn.addEventListener("click", function () {
+// //   document.body.classList.toggle("body-class");
+// // });
 
-    readLessBtn.addEventListener("click", function(){
-        hiddenSpan.classList.remove("block-text");
-        readMoreBtn.classList.remove("remove-read-more-btn");
-        readLessBtn.classList.remove("read-less-block");
-    });
-});
+// // let input = document.getElementById("email");
+// // input.addEventListener("keyup", function () {
+// //   input.style.border = "2px solid green";
+// // });
+
+// // let divIcon = document.querySelector(".icon-div");
+// // divIcon.addEventListener("mouseover", function (e) {
+// //   e.divIcon.style.backgroundColor = "red";
+// // });
 
 
-//subscribtion-footer
-
-let subscribeForm = document.getElementById("footer-subscribe");
-subscribeForm.addEventListener("submit", function (event) {
-  event.preventDefault();
-  let input = document.getElementById("email");
-  let inputValue = input.value;
-  alert`you subscribed successfully, Thank you!`;
-  inputValue.value = " ";
-  //ინფუთს ვერ ვასუფთავებ
-});
-
-//scroll-down
-
-// let scrollDown = document.getElementById("scroll-down");
-// window.addEventListener("scroll", function(){
-//     if(window.scrollDown > 300)
-// })
+// // let iconDiv = document.querySelector(".icon-div");
+// // iconDiv.addEventListener("click", function () {
+// //    this.classList.toggle("active-color");
+// //   });
 
 
-//scroll-down
-// document.getElementById('homie-scroll').addEventListener('click', function() {
-//   window.scrollBy(0, window.(500)); // Scrolls down by the height of the viewport
-// });
-
-// navbar scrollup and down
-
-// let lastScrollTop;
-// navbar = document.getElementById('navbar');
-// window.addEventListener('scroll',function(){
-// var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-// if(scrollTop > lastScrollTop){
-// navbar.style.top='-80px';
-// }
-// else{
-// navbar.style.top='0';
-// }
-// lastScrollTop = scrollTop;
-// });
-
-//current scroll
-
-window.addEventListener('scroll', function() {
-  document.getElementById('showScroll').innerHTML = window.pageYOffset + 'px';
-});
-
-
-//homie scroll down
-let homieScroll = document.getElementById("homieScroll");
-homieScroll.addEventListener("click", function () {
-  window.scrollTo({
-    top: 400,
-    behavior: "smooth",
-  });
-});

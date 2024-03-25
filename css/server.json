@@ -1,0 +1,44 @@
+{
+  "infos": [
+    { "id": "1", 
+    "name": "Kira", 
+    "sex": "female", 
+    "age": 1, "breed": 
+    "mixed" },
+    {
+      "id": "2",
+      "name": "Charmie",
+      "sex": "female",
+      "age": 2,
+      "breed": "mixed"
+    },
+    {
+      "id": "3",
+      "name": "Lava",
+      "sex": "female",
+      "age": 3,
+      "breed": "mixed"
+    },
+    {
+      "id": "4",
+      "name": "Bianco",
+      "sex": "male",
+      "age": 4,
+      "breed": "mixed"
+    },
+    {
+      "id": "5",
+      "name": "Rutta",
+      "sex": "male",
+      "age": 2,
+      "breed": "mixed"
+    },
+    {
+      "id": "6",
+      "name": "Elliot",
+      "sex": "male",
+      "age": 3 ,
+      "breed": "mixed"
+    }
+  ]
+}
