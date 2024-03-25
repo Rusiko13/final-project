@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 let happinessH1 = document.querySelectorAll(".happiness");
 document
   .getElementById("signupForm")
@@ -70,8 +70,6 @@ emailSign.addEventListener("keyup", validationSign);
 
 // let appearedDivs = document.querySelectorAll("hidden-div");
 
-
-
 document
   .getElementById("loginForm")
   .addEventListener("submit", function (event) {
@@ -96,9 +94,6 @@ document
     happinessH1.forEach(function (el) {
       el.remove();
     });
-
-
-
   });
 
 let loginButton = document.getElementById("loginButton");
@@ -151,8 +146,6 @@ function validation() {
 }
 emailLogin.addEventListener("keyup", validation);
 
-
-
 //user icon home page, inside elements
 
 let userIcon = document.querySelector(".user-div");
@@ -162,27 +155,25 @@ userIcon.addEventListener("click", function () {
   userUl.classList.toggle("user-ul-active");
 });
 
-
 //read more
 let articles = document.querySelectorAll(".article");
-articles.forEach(function(article) {
-    let readMoreBtn = article.querySelector(".read-more");
-    let hiddenSpan = article.querySelector(".hidden-text");
-    let readLessBtn = article.querySelector("#readless");
+articles.forEach(function (article) {
+  let readMoreBtn = article.querySelector(".read-more");
+  let hiddenSpan = article.querySelector(".hidden-text");
+  let readLessBtn = article.querySelector("#readless");
 
-    readMoreBtn.addEventListener("click", function(){
-        this.classList.add("remove-read-more-btn");
-        hiddenSpan.classList.add("block-text");
-        readLessBtn.classList.add("read-less-block");
-    });
+  readMoreBtn.addEventListener("click", function () {
+    this.classList.add("remove-read-more-btn");
+    hiddenSpan.classList.add("block-text");
+    readLessBtn.classList.add("read-less-block");
+  });
 
-    readLessBtn.addEventListener("click", function(){
-        hiddenSpan.classList.remove("block-text");
-        readMoreBtn.classList.remove("remove-read-more-btn");
-        readLessBtn.classList.remove("read-less-block");
-    });
+  readLessBtn.addEventListener("click", function () {
+    hiddenSpan.classList.remove("block-text");
+    readMoreBtn.classList.remove("remove-read-more-btn");
+    readLessBtn.classList.remove("read-less-block");
+  });
 });
-
 
 //subscribtion-footer
 
@@ -202,7 +193,6 @@ subscribeForm.addEventListener("submit", function (event) {
 // window.addEventListener("scroll", function(){
 //     if(window.scrollDown > 300)
 // })
-
 
 //scroll-down
 // document.getElementById('homie-scroll').addEventListener('click', function() {
@@ -226,10 +216,9 @@ subscribeForm.addEventListener("submit", function (event) {
 
 //current scroll
 
-window.addEventListener('scroll', function() {
-  document.getElementById('showScroll').innerHTML = window.pageYOffset + 'px';
+window.addEventListener("scroll", function () {
+  document.getElementById("showScroll").innerHTML = window.pageYOffset + "px";
 });
-
 
 //homie scroll down
 let homieScroll = document.getElementById("homieScroll");
@@ -238,4 +227,14 @@ homieScroll.addEventListener("click", function () {
     top: 400,
     behavior: "smooth",
   });
+});
+
+//burger bar
+
+let burger = document.getElementById("burgerBar");
+let navigation = document.getElementById("navBar");
+
+burger.addEventListener("click", function () {
+  burger.appendChild(navigation);
+  navigation.classList.add("activeNav");
 });
