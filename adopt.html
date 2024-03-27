@@ -13,27 +13,22 @@
     <title>Adopt</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <div class="icon-div">
-            <ul class="li-icon too-hover">
-              <li><a href="./html/adopt.html" class="too-hover"> H</a></li>
-              <li>
-                <a href="index.html"
-                  ><i class="fa-solid fa-paw too-hover"></i
-                ></a>
-              </li>
-              <li><a href="./html/adopt.html" class="too-hover"> mie</a></li>
-            </ul>
-          </div>
-          <li><a href="adopt.html">Adopt & find a family</a></li>
-          <!-- <li><a href="lostandfound.html">Lost & Found</a></li> -->
-          <li><a href="vet.html">Vet</a></li>
-          <li><a href="Grooming.html">Grooming</a></li>
-          <!-- <li><a href="store.html">Store</a></li> -->
-        </ul>
-      </nav>
+    <header class="header-homie"><div class="nav-block">
+      <nav  class="navigation" id="navEl">
+      <ul class="nav-ul" id="navUl">
+        <li><a href="index.html">Homie</a></li>
+        <li><a href="adopt.html">Adopt & find a family</a></li>
+        <li><a href="vet.html">Vet</a></li>
+        <li><a href="Grooming.html">Grooming</a></li>
+      </ul>
+    </nav>
+     
+      <div class="burger-bar" id="burgerBtn">
+        <div class="burger-lines"></div>
+        <div class="burger-lines"></div>
+        <div class="burger-lines"></div>
+      </div>
+    </div>
     </header>
     <main class="adopt-main">
       <div class="scroll-down-main-div" id="scrollButton">
@@ -52,7 +47,7 @@
         <form id="uploadForm" class="adopt-form">
           <div class="form-part1">
             <div>
-              <label for="petname">Pet Name:</label>
+              <label for="petName">Pet Name:</label>
               <input
                 type="text"
                 id="petName"
@@ -61,7 +56,7 @@
                 required
               />
               <label for="petSex">Pet Sex:</label>
-              <select name="petsex" id="petSex">
+              <select id="petSex" name="petSex" >
                 <option value="female">Female</option>
                 <option value="male">Male</option>
               </select>
@@ -106,9 +101,7 @@
       </div>
       <div class="adopt-middle-title">Ready to find a new Family Member?</div>
       <div class="pet-content">
-        <section>
-          <div id="Api"></div>
-        </section>
+      
         <section class="adopt-section">
           <div class="adopt-pic1 adopt"></div>
           <div class="infos1">
@@ -120,14 +113,14 @@
             </ul>
           </div>
           <div class="favorite-div">
-            <li class="favorite-li">
+            <div class="favorite-li">
               <span> Loved</span>
               <div class="icons-active">
                 <i class="fa-regular fa-heart outer-icon">
                   <i class="fa-solid fa-paw inner-icon"></i
                 ></i>
               </div>
-            </li>
+            </div>
           </div>
           <div class="chat-div">
             <h6>Chat</h6>
@@ -148,14 +141,14 @@
             </ul>
           </div>
           <div class="favorite-div">
-            <li class="favorite-li">
+            <div class="favorite-li">
               <span> Loved</span>
               <div class="icons-active">
                 <i class="fa-regular fa-heart outer-icon">
                   <i class="fa-solid fa-paw inner-icon"></i
                 ></i>
               </div>
-            </li>
+            </div>
           </div>
           <div class="chat-div">
             <h6>Chat</h6>
@@ -176,14 +169,14 @@
             </ul>
           </div>
           <div class="favorite-div">
-            <li class="favorite-li">
+            <div class="favorite-li">
               <span> Loved</span>
               <div class="icons-active">
                 <i class="fa-regular fa-heart outer-icon">
                   <i class="fa-solid fa-paw inner-icon"></i
                 ></i>
               </div>
-            </li>
+            </div>
           </div>
           <div class="chat-div">
             <h6>Chat</h6>
@@ -204,14 +197,14 @@
             </ul>
           </div>
           <div class="favorite-div">
-            <li class="favorite-li">
+            <div class="favorite-li">
               <span> Loved</span>
               <div class="icons-active">
                 <i class="fa-regular fa-heart outer-icon">
                   <i class="fa-solid fa-paw inner-icon"></i
                 ></i>
               </div>
-            </li>
+            </div>
           </div>
           <div class="chat-div">
             <h6>Chat</h6>
@@ -232,14 +225,14 @@
             </ul>
           </div>
           <div class="favorite-div">
-            <li class="favorite-li">
+            <div class="favorite-li">
               <span> Loved</span>
               <div class="icons-active">
                 <i class="fa-regular fa-heart outer-icon">
                   <i class="fa-solid fa-paw inner-icon"></i
                 ></i>
               </div>
-            </li>
+            </div>
           </div>
           <div class="chat-div">
             <h6>Chat</h6>
@@ -260,14 +253,14 @@
             </ul>
           </div>
           <div class="favorite-div">
-            <li class="favorite-li">
+            <div class="favorite-li">
               <span> Loved</span>
               <div class="icons-active">
                 <i class="fa-regular fa-heart outer-icon">
                   <i class="fa-solid fa-paw inner-icon"></i
                 ></i>
               </div>
-            </li>
+            </div>
           </div>
           <div class="chat-div">
             <h6>Chat</h6>
@@ -288,14 +281,14 @@
             </ul>
           </div>
           <div class="favorite-div">
-            <li class="favorite-li">
+            <div class="favorite-li">
               <span> Loved</span>
               <div class="icons-active">
                 <i class="fa-regular fa-heart outer-icon">
                   <i class="fa-solid fa-paw inner-icon"></i
                 ></i>
               </div>
-            </li>
+            </div>
           </div>
           <div class="chat-div">
             <h6>Chat</h6>
@@ -316,14 +309,14 @@
             </ul>
           </div>
           <div class="favorite-div">
-            <li class="favorite-li">
+            <div class="favorite-li">
               <span> Loved</span>
               <div class="icons-active">
                 <i class="fa-regular fa-heart outer-icon">
                   <i class="fa-solid fa-paw inner-icon"></i
                 ></i>
               </div>
-            </li>
+            </div>
           </div>
           <div class="chat-div">
             <h6>Chat</h6>
@@ -344,14 +337,14 @@
             </ul>
           </div>
           <div class="favorite-div">
-            <li class="favorite-li">
+            <div class="favorite-li">
               <span> Loved</span>
               <div class="icons-active">
                 <i class="fa-regular fa-heart outer-icon">
                   <i class="fa-solid fa-paw inner-icon"></i
                 ></i>
               </div>
-            </li>
+            </div>
           </div>
           <div class="chat-div">
             <h6>Chat</h6>
@@ -372,14 +365,14 @@
             </ul>
           </div>
           <div class="favorite-div">
-            <li class="favorite-li">
+            <div class="favorite-li">
               <span> Loved</span>
               <div class="icons-active">
                 <i class="fa-regular fa-heart outer-icon">
                   <i class="fa-solid fa-paw inner-icon"></i
                 ></i>
               </div>
-            </li>
+            </div>
           </div>
           <div class="chat-div">
             <h6>Chat</h6>
@@ -388,6 +381,10 @@
               <div class="notification-div">1</div>
             </div>
           </div>
+        </section>
+        <section>
+          <h3 class="api-test">Our Adopted Pet List</h3>
+          <div id="Api" class="api"></div>
         </section>
         <div id="scrollTop" class="scroll">
               <i class="fa-solid fa-paw"></i>
@@ -412,13 +409,13 @@
           <p>Subscribe to find your Homie</p>
           <div class="footer-submit">
             <div class="footer-form">
-              <form action="" id="subscribeForm">
+              <form action="#" id="subscribeForm">
               <label for="email">Email</label>
               <input type="email" name="email" id="email" placeholder="email" class="subscribe-input" />
-            </div>
+            
             <button id="subscribeBtn" class="subscribe-btn" type="submit">
               <i class="fa-solid fa-paw"></i>
-            </button></form>
+            </button></form></div>
           </div>
         </div>
         <div>

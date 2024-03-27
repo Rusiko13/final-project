@@ -1,34 +1,60 @@
 "use strict";
+// import {burgerBar} from "./burger.js";
+// burgerBar();
 let happinessH1 = document.querySelectorAll(".happiness");
 document
   .getElementById("signupForm")
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
+    let email = document.getElementById("emailS").value;
+    let password = document.getElementById("password1").value;
 
-    document.getElementById("email").value = "";
-    document.getElementById("password").value = "";
+    document.getElementById("emailS").value = "";
+    document.getElementById("password1").value = "";
     alert`you signed up successfully, Thank you!
     Now try to log in `;
-    signupFormContainer.style.display = "none";
+    signupForm.style.display = "none";
     loginFormContainer.style.display = "block";
     signupButton.remove();
   });
 let signupButton = document.getElementById("signupButton");
-let signupFormContainer = document.getElementById("signupFormContainer");
+let signupForm = document.getElementById("signupFormContainer");
+
 signupButton.addEventListener("click", function () {
-  if (signupFormContainer.style.display === "none") {
-    signupFormContainer.style.display = "block";
-    pageBackground.classList.add("background");
-    loginFormContainer.style.display = "none";
-    // document.querySelector("body").style.overflow = "hidden";
-  } else {
-    signupFormContainer.style.display = "none";
-    pageBackground.classList.remove("background");
-    // document.querySelector("body").style.overflow = "auto";
-  }
+  signupForm.classList.toggle("sign-form-visible");
+  signupForm.classList.toggle("sign-form");
+
+  let Farda = document.getElementById("farda1");
+
+  Farda.classList.add("farda-visible");
+  Farda.classList.remove("farda");
+
+  document.querySelector("body").style.overflow = "hidden";
+});
+document.querySelector(".x").addEventListener("click", function () {
+  signupForm.classList.remove("sign-form-visible");
+  signupForm.classList.add("sign-form");
+
+  loginFormContainer.classList.remove("log-form-visible");
+  loginFormContainer.classList.add("log-form");
+  let Farda = document.getElementById("farda1");
+
+  Farda.classList.remove("farda-visible");
+  Farda.classList.add("farda");
+  document.querySelector("body").style.overflow = "auto";
+});
+document.getElementById("x").addEventListener("click", function () {
+  signupForm.classList.remove("sign-form-visible");
+  signupForm.classList.add("sign-form");
+
+  loginFormContainer.classList.remove("log-form-visible");
+  loginFormContainer.classList.add("log-form");
+  let Farda = document.getElementById("farda1");
+
+  Farda.classList.remove("farda-visible");
+  Farda.classList.add("farda");
+  document.querySelector("body").style.overflow = "auto";
 });
 
 //password icon signup
@@ -75,11 +101,11 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
     let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
+    let password = document.getElementById("passw").value;
     console.log("email " + email);
     console.log("password " + password);
-    document.getElementById("email").value = "";
-    document.getElementById("password").value = "";
+    email = "";
+    password = "";
     alert`you logged in successfully, Thank you!`;
     loginFormContainer.style.display = "none";
     pageBackground.classList.remove("background");
@@ -98,21 +124,21 @@ document
 
 let loginButton = document.getElementById("loginButton");
 let loginFormContainer = document.getElementById("loginFormContainer");
-let pageBackground = document.getElementById("pageBackground");
 loginButton.addEventListener("click", function () {
-  if (loginFormContainer.style.display === "none") {
-    loginFormContainer.style.display = "block";
-    pageBackground.classList.add("background");
-    signupFormContainer.style.display = "none";
-  } else {
-    loginFormContainer.style.display = "none";
-    pageBackground.classList.remove("background");
-  }
+  loginFormContainer.classList.toggle("log-form-visible");
+  loginFormContainer.classList.toggle("log-form");
+
+  let Farda = document.getElementById("farda1");
+
+  Farda.classList.add("farda-visible");
+  Farda.classList.remove("farda");
+
+  document.querySelector("body").style.overflow = "hidden";
 });
 
 //password icon login
 
-let passwordInput = document.getElementById("password");
+let passwordInput = document.getElementById("passw");
 let passwordEye = document.getElementById("password-eye");
 passwordEye.addEventListener("click", function () {
   if (passwordInput.type == "password") {
@@ -160,7 +186,7 @@ let articles = document.querySelectorAll(".article");
 articles.forEach(function (article) {
   let readMoreBtn = article.querySelector(".read-more");
   let hiddenSpan = article.querySelector(".hidden-text");
-  let readLessBtn = article.querySelector("#readless");
+  let readLessBtn = article.querySelector(".readless");
 
   readMoreBtn.addEventListener("click", function () {
     this.classList.add("remove-read-more-btn");
@@ -177,15 +203,15 @@ articles.forEach(function (article) {
 
 //subscribtion-footer
 
-let subscribeForm = document.getElementById("footer-subscribe");
-subscribeForm.addEventListener("submit", function (event) {
-  event.preventDefault();
-  let input = document.getElementById("email");
-  let inputValue = input.value;
-  alert`you subscribed successfully, Thank you!`;
-  inputValue.value = " ";
-  //ინფუთს ვერ ვასუფთავებ
-});
+// let subscribeForm = document.getElementById("footer-subscribe");
+// subscribeForm.addEventListener("submit", function (event) {
+//   event.preventDefault();
+//   let input = document.getElementById("email");
+//   let inputValue = input.value;
+//   alert`you subscribed successfully, Thank you!`;
+//   inputValue.value = " ";
+//   //ინფუთს ვერ ვასუფთავებ
+// });
 
 //scroll-down
 
@@ -231,10 +257,10 @@ homieScroll.addEventListener("click", function () {
 
 //burger bar
 
-let burger = document.getElementById("burgerBar");
-let navigation = document.getElementById("navBar");
+let navigation = document.getElementById("navEl");
+let burger = document.getElementById("burgerBtn");
 
 burger.addEventListener("click", function () {
-  burger.appendChild(navigation);
-  navigation.classList.add("activeNav");
+  navigation.classList.toggle("navigation");
+  navigation.classList.toggle("visible");
 });

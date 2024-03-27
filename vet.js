@@ -1,5 +1,5 @@
-'use strict'
-//scroll down to appointment 
+"use strict";
+//scroll down to appointment
 let scrollDownVet = document.getElementById("scroll-btn");
 scrollDownVet.addEventListener("click", function () {
   window.scrollTo({
@@ -14,11 +14,9 @@ function bookAppointment1() {
   const timeInput = document.getElementById("time");
   const date = dateInput.value;
   const time = timeInput.value;
-  if(  dateInput.value == "" ||   timeInput.value == "" 
-  ){
+  if (dateInput.value == "" || timeInput.value == "") {
     alert("Please choose time and date for your booking");
-
-  }else{
+  } else {
     alert("Appointment booked for " + date + " at " + time);
     dateInput.value = "";
     timeInput.value = "";
@@ -26,4 +24,10 @@ function bookAppointment1() {
 }
 vetBtn.addEventListener("click", bookAppointment1);
 
+let navigation = document.getElementById("navEl");
+let burger = document.getElementById("burgerBtn");
 
+burger.addEventListener("click", function () {
+  navigation.classList.toggle("navigation");
+  navigation.classList.toggle("visible");
+});

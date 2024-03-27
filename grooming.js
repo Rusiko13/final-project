@@ -20,3 +20,13 @@ function bookAppointment() {
   
 }
 groomBtn.addEventListener("click",bookAppointment );
+
+let navigation = document.getElementById("navEl");
+let burger = document.getElementById("burgerBtn");
+
+burger.addEventListener("click", function () {
+
+  navigation.classList.toggle("navigation");
+  navigation.classList.toggle("visible");
+});
+

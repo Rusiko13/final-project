@@ -13,133 +13,149 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="pageBackground">
-      <header>
-        <nav>
-          <ul>
-            <div class="icon-div ">
-              <ul class="li-icon too-hover">
-                <li><a href="index.html" class="too-hover"> H</a></li>
-                <li>
-                  <a href="index.html"
-                    ><i class="fa-solid fa-paw too-hover"></i
-                  ></a>
-                </li>
-                <li><a href="index.html" class="too-hover"> mie</a></li>
-              </ul>
-            </div>
-            <li><a href="adopt.html">Adopt & find a family</a></li>
-            <!-- <li><a href="lostandfound.html">Lost & Found</a></li> -->
-            <li><a href="vet.html">Vet</a></li>
-            <li><a href="Grooming.html">Grooming</a></li>
-            <!-- <li><a href="store.html">Store</a></li> -->
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section class="vet-section1">
-          <div class="vet-photo1"></div>
-          <div class="header-par">
-          <h1>Trusted Vet Clinic</h1>
-          <p>we understand that your furry, feathered, 
-            or scaled family members deserve the very best care. 
-            Our team of experienced veterinarians and compassionate 
-            staff are here to provide top-notch medical services tailored 
-            to your pet's specific needs.</p>
-            <div class="book-call">
-              <div>
-              <button class="button vet-btn" id="scroll-btn"> Book Appointment</button></div>
-              <div>
-              <a href="tel:+995571111132" class="button vet-btn"> make a call</a></div>
-            </div>
+    <header class="header-homie">
+      <div id="pageBackground">
+        <div class="nav-block">
+          <nav class="navigation" id="navEl">
+            <ul class="nav-ul" id="navUl">
+              <li><a href="index.html">Homie</a></li>
+              <li><a href="adopt.html">Adopt & find a family</a></li>
+              <li><a href="vet.html">Vet</a></li>
+              <li><a href="Grooming.html">Grooming</a></li>
+            </ul>
+          </nav>
+          <div class="burger-bar" id="burgerBtn">
+            <div class="burger-lines"></div>
+            <div class="burger-lines"></div>
+            <div class="burger-lines"></div>
+          </div>
         </div>
-       
-        </section>
-       
-        <section class="vet-section2">
-          <h2>Our Services</h2>
-         
-          <div class="vet-section2-part1">
+      </div>
+    </header>
+    <main>
+      <section class="vet-section1">
+        <div class="vet-photo1"></div>
+        <div class="header-par">
+          <h1>Trusted Vet Clinic</h1>
+          <p>
+            we understand that your furry, feathered, or scaled family members
+            deserve the very best care. Our team of experienced veterinarians
+            and compassionate staff are here to provide top-notch medical
+            services tailored to your pet's specific needs.
+          </p>
+          <div class="book-call">
+            <div>
+              <button class="button vet-btn" id="scroll-btn">
+                Book Appointment
+              </button>
+            </div>
+            <div>
+              <a href="tel:+995571111132" class="button vet-btn">
+                make a call</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vet-section2">
+        <h2>Our Services</h2>
+
+        <div class="vet-section2-part1">
           <div class="services"><p>Routine Check-ups</p></div>
           <div class="services"><p>Vaccinations and presentive care</p></div>
           <div class="services"><p>Diagnostic Services</p></div>
           <div class="services"><p>Surgery</p></div>
           <div class="services"><p>Behavioral Counseling</p></div>
-          <div class="services"><p>Pharmacy for Prescription medications</p></div>
-          
-        </div>
-        </section>
-        <section class="reservation-section" >
-          <div class="groom-title vet-title">
-            <h1>Choose Our Service And Book an Appointment</h1>
-            <h3>When do you want to come?</h3>
-        <div id="calendar"></div>
-        <div id="appointmentForm">
-          <div class="groom-input">
-          <label for="date">Select a Day</label>
-          <input type="date" id="date"></div>
-          <div class="groom-input">
-          <label for="time">Select an hour</label>
-          <input type="time" id="time"></div>
-          <div class="groom-btn-div">
-          <button class="button groom-btn" id="vetBtn">Book Now</button></div>
-        </div>
-              </div>
-        </section>
-       
-      </main>
-      <footer>
-        <div class="footer-footer">
-          <div>
-            <h4>Navigation</h4>
-            <ul>
-              <li><a href="index.html" class="too-hover">Homie</a></li>
-              <li><a href="adopt.html">Adopt & Find a Family</a></li>
-              <!-- <li><a href="lostandfound.html">Lost & Found</a></li> -->
-              <li><a href="vet.html">Vet</a></li>
-              <li><a href="Grooming.html">Grooming</a></li>
-            </ul>
+          <div class="services">
+            <p>Pharmacy for Prescription medications</p>
           </div>
-          <div class="footer-subscribe">
-            <p>Subscribe to find your Homie</p>
-            <div class="footer-submit">
-              <div class="footer-form">
-                <form action="" id="subscribeForm">
+        </div>
+      </section>
+      <section class="reservation-section">
+        <div class="groom-title vet-title">
+          <h1>Choose Our Service And Book an Appointment</h1>
+          <h3>When do you want to come?</h3>
+          <div id="calendar"></div>
+          <div id="appointmentForm">
+            <div class="groom-input">
+              <label for="date">Select a Day</label>
+              <input type="date" id="date" />
+            </div>
+            <div class="groom-input">
+              <label for="time">Select an hour</label>
+              <input type="time" id="time" />
+            </div>
+            <div class="groom-btn-div">
+              <button class="button groom-btn" id="vetBtn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-footer">
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html" class="too-hover">Homie</a></li>
+            <li><a href="adopt.html">Adopt & Find a Family</a></li>
+            <!-- <li><a href="lostandfound.html">Lost & Found</a></li> -->
+            <li><a href="vet.html">Vet</a></li>
+            <li><a href="Grooming.html">Grooming</a></li>
+          </ul>
+        </div>
+        <div class="footer-subscribe">
+          <p>Subscribe to find your Homie</p>
+          <div class="footer-submit">
+            <div class="footer-form">
+              <form action="#" id="subscribeForm">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="email" class="subscribe-input" />
-              </div>
-              <button id="subscribeBtn" class="subscribe-btn" type="submit">
-                <i class="fa-solid fa-paw"></i>
-              </button></form>
-            </div>
-          </div>
-          <div>
-            <h6 class="footer-h6">Follow Us</h6>
-            <div class="footer-logos">
-              <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i> </a>
-  
-              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="email"
+                  class="subscribe-input"
+                />
+
+                <button id="subscribeBtn" class="subscribe-btn" type="submit">
+                  <i class="fa-solid fa-paw"></i>
+                </button>
+              </form>
             </div>
           </div>
         </div>
-        <section class="last-line">
-          <div class="last-line-div">
-            <ul>
-              <li><a href="#">Cookie Policy</a></li>
-              <li><a href="#">Cookies Settings</a></li>
-            </ul>
+        <div>
+          <h6 class="footer-h6">Follow Us</h6>
+          <div class="footer-logos">
+            <a href="https://www.facebook.com/">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
           </div>
-          <div><p>Copyright 2024, all rights reserved.</p></div>
-          <div>
-            <ul>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Security</a></li>
-            </ul>
-          </div>
-        </section>
-      </footer>
-      <script src="vet.js"></script>
-    </body>
-  </html>
-  
+        </div>
+      </div>
+      <section class="last-line">
+        <div class="last-line-div">
+          <ul>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Cookies Settings</a></li>
+          </ul>
+        </div>
+        <div><p>Copyright 2024, all rights reserved.</p></div>
+        <div>
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <script src="vet.js"></script>
+  </body>
+</html>
